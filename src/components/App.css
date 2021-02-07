@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(0, 0, 0, 0.801);
+  color: white;
+  width: 100vw;
+}
+
+h1 {
+  font-size: 40px;
+  letter-spacing: 8px;
+  margin: 30px 0px;
+  text-align: center;
+}
+
+h2 {
+  color: rgb(241, 248, 174);
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.oldTask {
+  color: rgb(189, 189, 189);
+  margin: 20px;
+}
+
+.App {
+  text-align: center;
+
+}
+
+.active {
+  font-size: 24px;
+  text-align: center;
+  margin: 0 auto;
+  background-color: rgb(75, 73, 73);
+  padding: 20px 0;
+}
+
+.done {
+  margin-bottom: 4vh;
+}
+
+
+.todotask {
+  display: block;
+  width: 35vw;
+  text-align: left;
+  margin: 10px auto;
+}
+
+.ok,
+.cancel {
+  font-size: 25px;
+  margin-right: 5px;
+  color: rgb(98, 163, 24);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  height: 20;
+}
+
+.cancel {
+  color: rgb(195, 195, 195);
+  font-size: 20px;
+  margin-left: 15px;
+}
+
+*:focus {
+  outline: none;
+}
+
+@media(orientation: portrait) {
+  .todotask {
+    display: block;
+    width: 90vw;
+    text-align: left;
+    margin: 10px auto;
+  }
+
+  h1 {
+    font-size: 35px;
+    letter-spacing: 4px;
+    margin: 30px 10px;
+    text-align: center;
+  }
+
+  .oneTask {
+    font-size: 20px;
+  }
+}
+
+@media(orientation: landscape) and (max-width: 1024px) {
+  .todotask {
+    width: 70vw;
+  }
+}

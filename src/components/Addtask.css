@@ -1,0 +1,87 @@
+input {
+    margin: 10px;
+    padding: 5px 10px;
+    font-size: 20px;
+}
+
+.taskTextInput {
+    width: 20vw;
+    text-align: center;
+    padding: 15px 0;
+    border-radius: 20px;
+}
+
+.form {
+    font-size: 20px;
+    transition: 1s;
+}
+
+
+.btnLess {
+    font-size: 25px;
+    cursor: pointer;
+    width: 40px;
+    height: 25px;
+    color: whitesmoke;
+    background-color: transparent;
+    border: 2px solid gray;
+}
+
+.btnMore {
+    font-size: 40px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgba(8, 8, 8, 0.315);
+    cursor: pointer;
+    margin: 30px 0 40px;
+    color: whitesmoke;
+    border: rgb(0, 0, 0) 2px solid;
+    box-shadow: 0 0 30px 5px rgb(175, 173, 173);
+    animation: changeSize 1s linear infinite alternate;
+}
+
+@keyframes changeSize {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+
+.form button {
+    padding: 3px 10px;
+    text-transform: uppercase;
+    margin: 20px;
+    font-size: 20px;
+}
+
+@media(orientation: portrait) {
+    .form {
+        font-size: 20px;
+        transition: 1s;
+        width: 100vw;
+    }
+
+    input {
+        margin: 10px;
+        padding: 5px 10px;
+        font-size: 20px;
+    }
+
+    .taskTextInput {
+        width: 80vw;
+        text-align: center;
+        padding: 13px 0;
+        border-radius: 20px;
+    }
+}
+
+@media(orientation: landscape) and (max-width: 1024px) {
+    .taskTextInput {
+        width: 70vw;
+    }
+}
